@@ -1,13 +1,10 @@
 import FloatingBtn from "@/components/floatingBtn";
 import Item from "@/components/item";
-import TabBar from "@/components/tabBar";
-import PageTitle from "@/components/title";
 
-export default function Home() {
+export default function Bought() {
     return (
         <>
-            <PageTitle title="홈" />
-            <div className="flex flex-col space-y-4 divide-y-[1px] pt-12 pb-24 h-full">
+            <div className="flex flex-col space-y-4 divide-y-[1px] h-full pt-12 pb-24">
                 {[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map((_, i) => (
                     <Item
                         key={i}
@@ -37,7 +34,6 @@ export default function Home() {
                     />
                 </svg>
             </FloatingBtn>
-            <TabBar />
         </>
     );
 }

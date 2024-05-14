@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    background-color: #454545;
+    color: white;
+    -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.normalBtn {
+    @apply border-gray-300/60 text-gray-300/60 hover:text-white
+    hover:border-white transition;
+}
+
+.activeBtn {
+    @apply text-mainOrange border-mainOrange hover:border-lightOrange hover:text-lightOrange transition;
+}
+
+.basicBtn {
+    @apply bg-mainOrange hover:bg-deepYellow hover:text-deepTeal text-white py-2 px-4 border border-transparent rounded-md shadow-sm focus:ring-2 focus:ring-offset-2 focus:ring-mainOrange focus:outline-none font-semibold mt-5 w-full;
+}
+
+.snsBtn {
+    @apply bg-deepTeal p-3 rounded-full shadow-md hover:scale-110 transition hover:bg-lightTeal;
+}
